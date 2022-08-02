@@ -94,6 +94,14 @@ helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
 helm repo update
 ```
 
+kubernetes-dashboard-enable-skip-login.yaml
+
+```
+extraArgs:
+  - --enable-skip-login
+  - --disable-settings-authorizer
+```
+
 ```
 helm -n k8s-dashboard install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --set=ingress.enabled=true,ingress.className=nginx -f kubernetes-dashboard-enable-skip-login.yaml
 ```
