@@ -1,3 +1,0 @@
-extraArgs:
-  - --enable-skip-login
-  - --disable-settings-authorizer

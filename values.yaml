@@ -1,0 +1,8 @@
+extraArgs:
+  - --enable-skip-login
+  - --disable-settings-authorizer
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - dashboard.example.com
